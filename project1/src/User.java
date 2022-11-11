@@ -11,6 +11,12 @@ public class User {
         this.type = type;
     }
 
+    public void checkNumber(){
+        if (number.length() != 10){
+            System.err.println("Wrong number, try again!");
+        } else System.out.println("OK");
+    }
+
     public String getName() {
         return name;
     }
